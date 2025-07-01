@@ -12,6 +12,10 @@
         font-family: 'IBM Plex Serif', serif;
         font-variant-numeric: tabular-nums;
         font-size: 54px;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
     }
 
     &__container {
@@ -86,6 +90,7 @@
         @media (max-width: 767px) {
             font-size: 18px;
             margin: 5px 0;
+            max-width: 90%;
         }
 
         @media (max-height: 480px) {
@@ -119,6 +124,7 @@
         @media (max-height: 480px) {
             font-size: 14px;
             margin-bottom: 5px;
+            padding: 5px;
         }
     }
 }
