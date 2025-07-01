@@ -17,7 +17,7 @@ const contaAsHoras = setInterval(function () {
     const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoEmMs) / 1000);
 
     document.getElementById('contador').innerHTML =
-        `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
+        ` ${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
     if (distanciaAteOEvento < 0) {
         clearInterval(contaAsHoras);
         document.querySelector('.hero__text').innerHTML = `O EVENTO JÁ COMCEÇOU`;

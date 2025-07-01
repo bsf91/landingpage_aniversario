@@ -8,6 +8,12 @@
         height: 45vh;
     }
 
+    #contador {
+        font-family: 'IBM Plex Serif', serif;
+        font-variant-numeric: tabular-nums;
+        font-size: 54px;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -62,6 +68,9 @@
     }
 
     &__text {
+        width: 100%;
+        max-width: 75%;
+        text-align: center;
         margin-top: 20px;
         font-family:
             Imperial Script,
