@@ -28,6 +28,7 @@
 
     &__container {
         display: flex;
+        flex-direction: row-reverse;
         width: 60%;
         height: 35%;
         gap: 10%;
