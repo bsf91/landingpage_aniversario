@@ -13,9 +13,19 @@ html,
 body {
     box-sizing: border-box;
     overflow-x: hidden;
+    background-image: url(../img/hero-background.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
 }
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+hr {
+    width: 20%;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid white;
 }
