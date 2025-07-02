@@ -28,4 +28,8 @@ hr {
     margin: 0 auto;
     border: none;
     border-top: 2px solid white;
+
+    @media (max-width: 767px) {
+        width: 50%;
+    }
 }

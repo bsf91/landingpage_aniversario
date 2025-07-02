@@ -1,70 +1,22 @@
+@use './utils/mixins.scss';
+
 .intro {
     background: linear-gradient(rgb(161, 161, 161, 0.9), rgba(255, 219, 57, 0.9));
-    justify-items: center;
-    max-width: 100%;
-    padding: 5vh 0;
-    height: 90vh;
-    align-content: center;
+    @include mixins.responsive-section;
 
     &__title {
-        font-family:
-            Imperial Script,
-            cursive;
-        font-weight: 600;
-        font-size: 72px;
-        text-underline-offset: 4px;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 20px;
-
-        @media (max-width: 1440px) {
-            font-size: 64px;
-        }
-
-        @media (max-width: 767px) {
-            font-size: 32px;
-        }
+        @include mixins.responsive-title;
     }
 
     &__container {
-        display: flex;
-        width: 60%;
-        height: 35%;
-        gap: 10%;
-        margin: 5% 0;
-
-        @media (max-width: 767px) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        @include mixins.responsive-container;
     }
 
     &__img {
-        height: 100%;
-        width: 100%;
-        max-width: 40%;
-
-        @media (max-width: 767px) {
-            max-width: 100%;
-            height: auto;
-            padding-bottom: 5%;
-        }
+        @include mixins.responsive-img;
     }
 
     &__text {
-        height: 100%;
-        width: 100%;
-        max-width: 40%;
-        font-family: Alegreya, serif;
-        font-size: 44px;
-        line-height: 40px;
-
-        @media (max-width: 767px) {
-            max-width: 100%;
-            font-size: 16px;
-            line-height: normal;
-            text-align: start;
-        }
+        @include mixins.responsive-text;
     }
 }
