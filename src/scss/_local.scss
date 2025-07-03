@@ -9,6 +9,7 @@
     }
 
     &__container {
+        height: 35%;
         flex-direction: row-reverse;
         @include mixins.responsive-container;
     }

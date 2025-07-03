@@ -1,3 +1,10 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
+// Contador de horas para o evento
+
 const dataDoEvento = new Date('2026-02-17T08:47:00');
 const timeStampDoEvento = dataDoEvento.getTime();
 
@@ -24,3 +31,13 @@ const contaAsHoras = setInterval(function () {
         return;
     }
 }, 1000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const isSmallScreen = window.matchMedia('(max-width: 640px)').matches;
+
+    if (isSmallScreen) {
+        document.querySelectorAll('[data-aos]').forEach((el) => {
+            el.setAttribute('data-aos-once', 'true');
+        });
+    }
+});
