@@ -48,21 +48,31 @@
     word-break: break-word;
     box-sizing: border-box;
     overflow-y: visible;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @media (max-width: 640px) {
         max-width: 100%;
         font-size: 18px;
         line-height: 1.4;
-        text-align: start;
+        text-align: justify;
         overflow-y: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     @media (max-height: 430px) {
         max-width: 100%;
         font-size: 18px;
         line-height: 1.4;
-        text-align: start;
+        text-align: justify;
         overflow-y: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
