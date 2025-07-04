@@ -43,21 +43,26 @@
     width: 100%;
     max-width: 40%;
     font-family: Alegreya, serif;
-    font-size: 34px;
-    line-height: 40px;
+    font-size: clamp(18px, 2.5vw, 28px);
+    line-height: 1.4;
+    word-break: break-word;
+    box-sizing: border-box;
+    overflow-y: visible;
 
     @media (max-width: 640px) {
         max-width: 100%;
-        font-size: 16px;
-        line-height: normal;
+        font-size: 18px;
+        line-height: 1.4;
         text-align: start;
+        overflow-y: visible;
     }
 
     @media (max-height: 430px) {
         max-width: 100%;
-        font-size: 16px;
-        line-height: normal;
+        font-size: 18px;
+        line-height: 1.4;
         text-align: start;
+        overflow-y: visible;
     }
 }
 
